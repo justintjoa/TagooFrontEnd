@@ -426,6 +426,7 @@
 		5227E98F242C4DCF007E806E /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		5227E991242C4E05007E806E /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		5227E993242C4E49007E806E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		52D66F75242C53E000C028AC /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 		55234DE2974FF7C36361AF07 /* Generics17.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics17.cpp; path = Classes/Native/Generics17.cpp; sourceTree = SOURCE_ROOT; };
 		553649F0B455F4A371C9A49C /* Assembly-CSharp6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp6.cpp"; path = "Classes/Native/Assembly-CSharp6.cpp"; sourceTree = SOURCE_ROOT; };
 		55CC48769D834EEC4857C96A /* UnityEngine.AudioModule_Debugger.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.AudioModule_Debugger.c; path = Classes/Native/UnityEngine.AudioModule_Debugger.c; sourceTree = SOURCE_ROOT; };
@@ -1000,13 +1001,13 @@
 				5ADAA457716D074A0BEB2723 /* Pods-UnityFramework.releaseforrunning.xcconfig */,
 				B9356C4E2B235B251156E19E /* Pods-UnityFramework.debug.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA = {
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				52D66F75242C53E000C028AC /* README.MD */,
 				AA31BF961B55660D0013FB1B /* Data */,
 				56C56C9717D6015100616839 /* Images.xcassets */,
 				9DA3B0422174CB96001678C7 /* MainApp */,
@@ -1443,7 +1444,7 @@
 				German,
 				en,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
