@@ -79,6 +79,8 @@
 		4F93458A8EF03433A5942055 /* Il2CppMetadataRegistration.c in Sources */ = {isa = PBXBuildFile; fileRef = B8C94505991CDC5C79FFA435 /* Il2CppMetadataRegistration.c */; };
 		5227E992242C4E05007E806E /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5227E991242C4E05007E806E /* ARKit.framework */; };
 		5239496A93FDA59035445EB0 /* Generics12.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F4F6080CF9CD5E4C984A9 /* Generics12.cpp */; };
+		526B67C2242C74C4008650DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526B67C1242C74C4008650DF /* Main.storyboard */; };
+		526B67C5242C75C3008650DF /* FInalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526B67C4242C75C3008650DF /* FInalViewController.swift */; };
 		52E449F1AA79F3DEB530C0C5 /* com.unity.multiplayer-hlapi.Runtime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07C949A2AD2BA26B019BF531 /* com.unity.multiplayer-hlapi.Runtime.cpp */; };
 		5567447CA2F43BC1853BACBA /* UnityEngine.SpatialTracking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE1D4E2BBBE884269FECC9FC /* UnityEngine.SpatialTracking.cpp */; };
 		5623C57617FDCB0800090B9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -426,6 +428,9 @@
 		5227E98F242C4DCF007E806E /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		5227E991242C4E05007E806E /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		5227E993242C4E49007E806E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		526B67C1242C74C4008650DF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		526B67C3242C75C2008650DF /* Unity-iPhone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Unity-iPhone-Bridging-Header.h"; sourceTree = "<group>"; };
+		526B67C4242C75C3008650DF /* FInalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FInalViewController.swift; sourceTree = "<group>"; };
 		52D66F75242C53E000C028AC /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 		55234DE2974FF7C36361AF07 /* Generics17.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics17.cpp; path = Classes/Native/Generics17.cpp; sourceTree = SOURCE_ROOT; };
 		553649F0B455F4A371C9A49C /* Assembly-CSharp6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp6.cpp"; path = "Classes/Native/Assembly-CSharp6.cpp"; sourceTree = SOURCE_ROOT; };
@@ -1253,6 +1258,9 @@
 			isa = PBXGroup;
 			children = (
 				9DA3B0432174CB96001678C7 /* main.mm */,
+				526B67C1242C74C4008650DF /* Main.storyboard */,
+				526B67C4242C75C3008650DF /* FInalViewController.swift */,
+				526B67C3242C75C2008650DF /* Unity-iPhone-Bridging-Header.h */,
 			);
 			path = MainApp;
 			sourceTree = SOURCE_ROOT;
@@ -1414,6 +1422,7 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = 7V33CQFMZ8;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.GameControllers.appletvos = {
@@ -1461,6 +1470,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526B67C2242C74C4008650DF /* Main.storyboard in Resources */,
 				9D9DE4EA221D84E60049D9A1 /* Data in Resources */,
 				56C56C9817D6015200616839 /* Images.xcassets in Resources */,
 				F1814130BBF8FF0F68EE82F3 /* LaunchScreen-iPhone.xib in Resources */,
@@ -1594,6 +1604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA3B0442174CB96001678C7 /* main.mm in Sources */,
+				526B67C5242C75C3008650DF /* FInalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1907,6 +1918,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1919,7 +1931,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -1938,6 +1950,9 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "MainApp/Unity-iPhone-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				UNITY_RUNTIME_VERSION = 2019.3.6f1;
 				UNITY_SCRIPTING_BACKEND = il2cpp;
@@ -1954,6 +1969,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -1963,7 +1979,7 @@
 				DEVELOPMENT_TEAM = 7V33CQFMZ8;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
@@ -1982,6 +1998,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "MainApp/Unity-iPhone-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				UNITY_RUNTIME_VERSION = 2019.3.6f1;
 				UNITY_SCRIPTING_BACKEND = il2cpp;
@@ -1991,6 +2009,7 @@
 		5623C58317FDCB0900090B9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2042,6 +2061,7 @@
 		5623C58417FDCB0900090B9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2129,6 +2149,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -2139,7 +2160,7 @@
 				DEVELOPMENT_TEAM = 7V33CQFMZ8;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -2158,6 +2179,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "MainApp/Unity-iPhone-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				UNITY_RUNTIME_VERSION = 2019.3.6f1;
 				UNITY_SCRIPTING_BACKEND = il2cpp;
@@ -2167,6 +2190,7 @@
 		56E860821D6757FF00A1AB2B /* ReleaseForRunning */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2248,6 +2272,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -2257,7 +2282,7 @@
 				DEVELOPMENT_TEAM = 7V33CQFMZ8;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -2276,6 +2301,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "MainApp/Unity-iPhone-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				UNITY_RUNTIME_VERSION = 2019.3.6f1;
 				UNITY_SCRIPTING_BACKEND = il2cpp;
@@ -2285,6 +2312,7 @@
 		56E860851D67581C00A1AB2B /* ReleaseForProfiling */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
 				BUNDLE_LOADER = "$(TEST_HOST)";
